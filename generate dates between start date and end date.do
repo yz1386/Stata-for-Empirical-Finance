@@ -15,7 +15,7 @@ format start2 %td
 format end2 %td
 
 
-*3. generate dates series for each director in each company between start date and end date
+*3. generate date series for each director in each company between start date and end date
 
 sum start2
 local min = r(min)
