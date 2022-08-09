@@ -41,3 +41,26 @@ save your_panel_data.dta,replace
 
 
 *Sometimes the data input of wide format is quite complicated, we should manually do it in excel to prepare a panel. Please also see my excel example.
+
+
+* example: Long to wide
+clear all
+input str20 cusip year  bm 
+A 2010 1.2
+A 2011 1.5 
+A 2012 1.4
+B 2010 0.8
+B 2011 0.9 
+B 2012 1.2 
+C 2010 1.6 
+C 2011 1.8 
+C 2012 1.3
+end  
+save long.dta,replace
+
+sort year cusip
+egen id=group(cusip)
+keep id year bm
+
+reshape wide bm, i(year) j(id) 
+
