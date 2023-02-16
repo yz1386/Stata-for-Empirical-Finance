@@ -20,16 +20,16 @@ save data1.dta,replace
 *2 prepare the dataset 2
 clear all
 input str20 company str20 DATE2	VAR2 
-A 20210630	8
-B 20210630	9
-C 20210630	10
-A 20210731	3
-B 20210731	6
-C 20210731	8
+A 30062021	8
+B 30062021	9
+C 30062021	10
+A 31072021	3
+B 31072021	6
+C 31072021	8
 end  
 
-gen year=real(substr(DATE,1,4))
-gen month=real(substr(DATE,5,2))
+gen year=real(substr(DATE,5,4))
+gen month=real(substr(DATE,3,2))
 save data2.dta,replace
 
 *3 merge them and generate new date
