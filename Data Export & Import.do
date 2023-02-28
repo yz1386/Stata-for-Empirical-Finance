@@ -8,17 +8,17 @@ cd "M:\"
 
 *prepare the dataset
 clear all
-input str20 company year total_asset bm 
-A 2010 1000 1.2
-A 2011 1200 1.5 
-A 2012 1300 1.4 
-B 2010 3000 0.8
-B 2011 3200 0.9 
-B 2012 3300 1.2 
-C 2010 600 1.6 
-C 2011 900 1.8 
-C 2012 800 1.3
-end  
+input str20 company year total_asset bm ret
+A 2010 1000 1.2 0.01
+A 2011 1200 1.5 0.016
+A 2012 1300 1.4 0.03
+B 2010 3000 0.8 0.016
+B 2011 3200 0.9 0.013
+B 2012 3300 1.2 0.018
+C 2010 600 1.6 0.06
+C 2011 900 1.8 0.03
+C 2012 800 1.3 0.08
+end 
 
 *export to Stata data
 
