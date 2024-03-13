@@ -6,6 +6,9 @@
 *Please speficy your Working Folder first!!!
 cd M:\stata
 
+*see the merge function manual first
+help merge
+
 *Prepare 4 datasets first
 *str20 tells Stata it is a string variable and that it could be up to 20 characters wide.
 
