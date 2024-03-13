@@ -84,10 +84,13 @@ drop _merge
 *Dataset 1+ Dataset 2+Dataset 3
 merge 1:1 company year using data3
 
-/*Check these two lines after you already clearly understand the merging process
+/*Check these three lines after you already clearly understand the merging process.Here we don't have duplicates in both master file and the using file. Both master file and the using file are clean and are uniquely identified by company and year.
+
 merge m:m company year using data3
 merge m:1 company year using data3
+merge 1:m company year using data3
  */
+
 sort company year
  
 *if we keep the matched observations
