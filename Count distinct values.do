@@ -39,6 +39,10 @@ gen number_of_year =  r(unique)
 
 *unique year,detail
 
+*display unique value in stata log file
+tabulate company
+
+tabulate year 
 
 *Example 2
 clear all
